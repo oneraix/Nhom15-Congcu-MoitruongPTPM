@@ -34,7 +34,7 @@ const DisciplineManagement = () => {
           `http://localhost:3000/api/discipline/disciplines/${editingDisciplineId}`,
           formData
         );
-        setMessage("Cập nhật kỷ luật thành công!");
+        setMessage("Cập nhật loại kỷ luật thành công!");
       } else {
         await axios.post("http://localhost:3000/api/discipline/disciplines", formData);
         setMessage("Thêm mới kỷ luật thành công!");
@@ -42,7 +42,7 @@ const DisciplineManagement = () => {
       fetchDisciplines();
       resetForm();
     } catch (error) {
-      setMessage("Lỗi khi xử lý kỷ luật.");
+      setMessage("Lỗi khi xử lý cập nhật kỷ luật.");
     }
   };
 
