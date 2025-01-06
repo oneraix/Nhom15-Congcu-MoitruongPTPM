@@ -16,7 +16,7 @@ const ForgotPassword = () => {
       const response = await axios.post("http://localhost:3000/api/auth/forgot-password", { username });
       if (response.data.message) {
         setStep(2);
-        setMessage("Username hợp lệ. Hãy nhập mật khẩu mới.");
+        setMessage("Username hợp lệ. Hãy tạo mật khẩu mới.");
       }
     } catch (error) {
       setMessage("Username không tồn tại trong hệ thống.");
