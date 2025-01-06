@@ -55,7 +55,7 @@ const EmployeeManagement = () => {
       });
     }
   };
-
+//xoá nhân viên
   const handleDeleteEmployee = async (employee_id) => {
     if (window.confirm('Bạn có chắc chắn muốn xóa nhân viên này?')) {
       const response = await deleteEmployee(employee_id);
