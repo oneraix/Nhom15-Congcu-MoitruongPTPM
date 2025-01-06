@@ -19,7 +19,7 @@ const ForgotPassword = () => {
         setMessage("Username hợp lệ. Hãy tạo mật khẩu mới.");
       }
     } catch (error) {
-      setMessage("Username không tồn tại trong hệ thống.");
+      setMessage("Username không tồn tại.");
     }
   };
 
