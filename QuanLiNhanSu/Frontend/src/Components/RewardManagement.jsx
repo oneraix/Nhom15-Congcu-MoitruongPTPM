@@ -82,7 +82,7 @@ const RewardManagement = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
         {/* Header */}
         <div className="bg-green-600 rounded-lg shadow-lg p-6 mb-8">
-          <h1 className="text-3xl font-bold text-white">Quản lý Khen thưởng</h1>
+          <h1 className="text-3xl font-bold text-white">Quản lý nội dung Khen thưởng</h1>
           <p className="text-green-100 mt-2">Hệ thống quản lý thông tin khen thưởng nhân viên</p>
         </div>
 
