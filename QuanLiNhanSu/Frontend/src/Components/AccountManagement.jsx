@@ -33,7 +33,7 @@ const AccountManagement = () => {
         setMessage("Cập nhật tài khoản thành công!");
       } else {
         await axios.post("http://localhost:3000/api/account/accounts", formData);
-        setMessage("Thêm tài khoản mới thành công!");
+        setMessage("Tạo tài khoản mới thành công!");
       }
       fetchAccounts();
       resetForm();

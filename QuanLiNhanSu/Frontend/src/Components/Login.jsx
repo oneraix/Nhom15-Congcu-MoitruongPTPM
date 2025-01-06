@@ -25,7 +25,7 @@ const Login = () => {
           localStorage.setItem('token', data.token); // Lưu token vào localStorage
           navigate('/'); // Chuyển đến trang dashboard
         } else {
-          alert(data.error || 'Đăng nhập thất bại.');
+          alert(data.error || 'Đăng nhập thất bại!.');
         }
       })
       .catch((error) => {
