@@ -77,7 +77,7 @@ const ForgotPassword = () => {
                     type="text"
                     value={username}
                     onChange={(e) => setUsername(e.target.value)}
-                    placeholder="Nhập username của bạn"
+                    placeholder="Nhập username "
                     className="w-full pl-4 pr-10 py-3 border border-gray-300 rounded-xl 
                              focus:ring-2 focus:ring-blue-600 focus:border-transparent
                              transition duration-200 placeholder:text-gray-400"
