@@ -16,10 +16,10 @@ const ForgotPassword = () => {
       const response = await axios.post("http://localhost:3000/api/auth/forgot-password", { username });
       if (response.data.message) {
         setStep(2);
-        setMessage("Username hợp lệ. Hãy nhập mật khẩu mới.");
+        setMessage("Username hợp lệ. Hãy tạo mật khẩu mới.");
       }
     } catch (error) {
-      setMessage("Username không tồn tại trong hệ thống.");
+      setMessage("Username không tồn tại.");
     }
   };
 
@@ -77,7 +77,7 @@ const ForgotPassword = () => {
                     type="text"
                     value={username}
                     onChange={(e) => setUsername(e.target.value)}
-                    placeholder="Nhập username của bạn"
+                    placeholder="Nhập username "
                     className="w-full pl-4 pr-10 py-3 border border-gray-300 rounded-xl 
                              focus:ring-2 focus:ring-blue-600 focus:border-transparent
                              transition duration-200 placeholder:text-gray-400"
