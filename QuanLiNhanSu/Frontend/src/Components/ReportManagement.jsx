@@ -28,7 +28,7 @@ const ReportManagement = () => {
   };
 
   if (loading) {
-    return <p className="text-center text-gray-500">Đang tải...</p>;
+    return <p className="text-center text-gray-500">Đang tải dữ liệuu...</p>;
   }
 
   if (error) {

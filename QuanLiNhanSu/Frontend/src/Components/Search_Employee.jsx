@@ -43,7 +43,7 @@ const SearchEmployees = () => {
       const response = await axios.post(apiEndpoints.gender, { gender: query });
       setResults(response.data);
     } catch (error) {
-      console.error('Lỗi khi tìm kiếm theo giới tính:', error);
+      console.error('Lỗi khi tìm kiếm nhân viên theo giới tính:', error);
       alert('Đã xảy ra lỗi khi tìm kiếm theo giới tính!');
     }
   };
